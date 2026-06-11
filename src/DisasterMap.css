@@ -1,0 +1,31 @@
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#map {
+  height: 100vh;
+  width: 100vw;
+}
+
+#info {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #999;
+}
+
+#controls button {
+  margin: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}

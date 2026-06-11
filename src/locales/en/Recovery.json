@@ -1,0 +1,18 @@
+{
+  "fact": "Did you know?🤔 \nFloods are the most common natural disaster worldwide",
+  "title": "Recovery: What to Do After a Disaster",
+  "firstAidTitle": "First Aid",
+  "firstAidList": [
+    "Clean small cuts with water.",
+    "Use a clean cloth or bandage.",
+    "For burns, cool with water (not ice)."
+  ],
+  "supportTitle": "Support Others",
+  "supportText": "Look after your friends, classmates, and family. Support those who need help.",
+  "dangerTitle": "Stay Away from Danger Zones",
+  "dangerText": "Avoid damaged buildings, flooded roads, and broken wires.",
+  "emotionalTitle": "Emotional Recovery",
+  "emotionalText": "It’s okay to feel scared. Talk to teachers, parents, or friends to feel better.",
+  "reportButton": "Report Disaster >>",
+  "fact2": "Good thing!💡\nWe now know how to keep ourselves safe!"
+}

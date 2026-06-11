@@ -1,0 +1,144 @@
+/* chatbot.css - place on every page (link in <head>) */
+
+/* Floating Button */
+.chatbot-btn {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  z-index: 2000;
+}
+
+.chatbot-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+.chatbot-btn img {
+  width: 38px;
+  height: 38px;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Chat Popup */
+.chat-popup {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  width: 360px;
+  height: 520px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+  display: none;
+  flex-direction: column;
+  z-index: 3000;
+  animation: popupFade 0.28s ease-in-out;
+  max-width: calc(100% - 40px);
+}
+
+.chat-popup.active {
+  display: flex;
+}
+
+@keyframes popupFade {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Header */
+.chat-header {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #fff;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.chat-title {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.chat-header button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* Content */
+.chat-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: #f8fafc;
+  min-height: 320px;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* Zapier embed should fill the content area */
+zapier-interfaces-chatbot-embed {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 1 auto;
+  min-height: 320px;
+}
+
+/* simple loading placeholder */
+.chat-loading {
+  padding: 18px;
+  color: #334155;
+  font-size: 14px;
+}
+
+/* hide the default Zapier floating button if the page includes it */
+zapier-interfaces-chatbot-embed[is-popup='true'] {
+  display: none !important;
+}
+
+/* hide Zapier branding (try to remove the visible part if possible) */
+zapier-interfaces-chatbot-embed::part(branding) {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 420px) {
+  .chat-popup {
+    right: 10px;
+    left: 10px;
+    bottom: 80px;
+    width: auto;
+    height: 70vh;
+    border-radius: 12px;
+  }
+  .chatbot-btn { bottom: 14px; right: 14px; width: 58px; height: 58px; }
+}
+/* ensure embed fills container */
+zapier-interfaces-chatbot-embed {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 320px !important;
+  display: block !important;
+}
+.chat-content { padding: 12px; box-sizing: border-box; }

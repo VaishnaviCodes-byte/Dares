@@ -1,0 +1,35 @@
+{
+  "forestfiring": {
+    "instructionsTitle": "⚠ Instructions",
+    "before": "Before:",
+    "beforeList": [
+      "Keep safety kit ready",
+      "Know safe spots and routes",
+      "Clear dry leaves and waste"
+    ],
+    "during": "During:",
+    "duringList": [
+      "Follow alerts and evacuate",
+      "Wear mask, cover skin",
+      "Stay low if smoke is around"
+    ],
+    "after": "After:",
+    "afterList": [
+      "Return only if safe",
+      "Watch trees and wires",
+      "Give first aid, call help"
+    ],
+    "videoTitle": "“Be Prepared, Protect Nature, Protect Yourself”",
+    "safetyKit": "Safety Kit",
+    "kitItems": {
+      "mask": "Mask",
+      "bottle": "Bottle",
+      "whistle": "Whistle",
+      "blanket": "Blanket",
+      "torch": "Torch",
+      "firstAid": "First Aid Kit",
+      "gloves": "Gloves"
+    },
+    "startDrill": "🚨 Start Virtual Drill"
+  }
+}

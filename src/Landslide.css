@@ -1,0 +1,66 @@
+.L-ani h3{
+  text-align: center;
+  align-self: center;
+  position: relative;
+  left: 150px;
+}
+.ani{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.img-animation{
+  justify-self: flex-end;
+  position: relative;
+  top: 180px;
+}
+.img-animation img{
+  height: 500px;
+}
+.ani {
+  position: relative;
+  overflow: hidden;
+  width: 600px; /* same as your video */
+  height: 400px; /* adjust as needed */
+}
+
+/* Mountain stays static */
+.img-animation img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Rocks */
+.video-box > div:not(.img-animation) img {
+  position: absolute;
+  top: 0;
+  left: 50%; /* start from mountain top center */
+  transform: translateX(-50%);
+  width: 60px; /* adjust size */
+  z-index: 2;
+  animation: rockFall linear infinite;
+}
+
+/* Individual rock speeds & delays */
+.video-box > div:nth-child(2) img { animation-duration: 4s; animation-delay: 0s; }
+.video-box > div:nth-child(3) img { animation-duration: 5s; animation-delay: 1s; }
+.video-box > div:nth-child(4) img { animation-duration: 6s; animation-delay: 2s; }
+
+/* Falling rocks animation */
+@keyframes rockFall {
+  0% {
+    transform: translateX(-50%) translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(calc(-50% + 50px)) translateY(150px) rotate(45deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateX(calc(-50% + 100px)) translateY(350px) rotate(90deg);
+    opacity: 0;
+  }
+}

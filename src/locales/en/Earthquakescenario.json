@@ -1,0 +1,37 @@
+{
+  "q1": "You are in your classroom when the ground starts shaking. What should you do first?",
+  "q1_options": ["Run outside immediately", "Drop, Cover, and Hold On under the desk", "Call your friends", "Stay near the windows"],
+
+  "q2": "During an earthquake, you see a ceiling fan about to fall. What is the safest step?",
+  "q2_options": ["Try to catch it", "Move away and cover your head", "Shout for help", "Ignore it and continue studying"],
+
+  "q3": "Your teacher instructs everyone to evacuate after shaking stops. What should you avoid?",
+  "q3_options": ["Leave calmly through the stairs", "Push or rush others", "Follow teacher instructions", "Move away from buildings after exit"],
+
+  "q4": "You are outside when the earthquake begins. Where should you move?",
+  "q4_options": ["Under a tree", "Near tall buildings", "Open ground away from structures", "Next to parked vehicles"],
+
+  "q5": "After the earthquake, you notice a gas leak. What should you do?",
+  "q5_options": ["Light a match to check", "Turn off the gas and inform an adult", "Ignore it", "Open windows but stay inside"],
+
+  "q6": "You are in a library when an earthquake hits. Which action is correct?",
+  "q6_options": ["Run towards the exit immediately", "Stand near bookshelves", "Drop under a sturdy table or desk", "Climb onto a chair for safety"],
+
+  "q7": "During aftershocks, what should you do?",
+  "q7_options": ["Go back inside damaged buildings", "Stay in a safe open area", "Ignore them", "Use the lift"],
+
+  "q8": "Your friend is panicking and shouting during the quake. You should:",
+  "q8_options": ["Shout louder than them", "Stay calm and guide them to safety", "Run away alone", "Record a video"],
+
+  "q9": "A teacher asks students to form a line outside the school. You should:",
+  "q9_options": ["Push to get ahead", "Follow quietly and maintain distance", "Play with friends", "Run to collect personal belongings"],
+
+  "q10": "You see fallen electrical wires after the quake. What is the safest action?",
+  "q10_options": ["Touch them to move out of the way", "Stay away and inform authorities", "Jump over them quickly", "Ignore them and continue walking"],
+
+  "finish": "Finish",
+  "next": "Next →",
+  "playAgain": "🔄 Play Again!",
+  "hurray": "🎉 Hurray! You Did It!",
+  "score": "You scored"
+}

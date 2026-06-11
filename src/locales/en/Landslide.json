@@ -1,0 +1,35 @@
+{
+  "landslide": {
+    "instructionsTitle": "⚠ Instructions",
+    "before": "Before:",
+    "beforeList": [
+      "Keep safety kit ready",
+      "Listen to weather alerts",
+      "Avoid building on steep slopes"
+    ],
+    "during": "During:",
+    "duringList": [
+      "Move to higher safe ground quickly",
+      "Stay away from rivers and loose rocks",
+      "Help children and elderly evacuate"
+    ],
+    "after": "After:",
+    "afterList": [
+      "Stay away from fallen wires and blocked roads",
+      "Check for injuries and give first aid",
+      "Call 112 only for emergency help"
+    ],
+    "videoTitle": "“Don’t Risk It - Move To Safer Ground”",
+    "safetyKit": "Safety Kit",
+    "kitItems": {
+      "helmet": "Helmet",
+      "torch": "Torch",
+      "firstAid": "First Aid Kit",
+      "rope": "Rope",
+      "raincoat": "Raincoat",
+      "medicine": "Medicine",
+      "fruits": "Fruits"
+    },
+    "startDrill": "🚨 Start Virtual Drill"
+  }
+}

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap');
+
+.weather-btn {
+  position: fixed;
+  bottom: 150px;
+  right: 20px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  z-index: 2000;
+}
+
+.weather-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+.weather-btn img {
+  width: 80px;
+  height: 80px;
+  user-select: none;
+  pointer-events: none;
+}
+
+.weather-card {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 90%;
+  max-width: 400px;
+  background: linear-gradient(135deg, #4da6ff, #99d6ff);
+  color: #fff;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease-in-out;
+  z-index: 2100;
+}
+
+/* Close Button */
+.weather-close {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+.weather-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.weather-search input {
+  flex: 1;
+  margin-right: 16px;
+  padding: 10px 25px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background: #ebfffc;
+  color: #555;
+}
+
+.weather-search button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: #ebfffc;
+  cursor: pointer;
+}
+
+.weather-search button img {
+  width: 16px;
+  height: 16px;
+}
+
+.weather-display-icon {
+  width: 170px;
+  margin-top: 30px;
+}
+
+.weather-temp {
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.weather-city {
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.weather-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.weather-col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.weather-col img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.weather-humidity,
+.weather-wind {
+  font-size: 28px;
+  margin-top: -6px;
+}
+
+.weather-display {
+  display: block;
+}
+
+.weather-error {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+}

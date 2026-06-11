@@ -1,0 +1,17 @@
+{
+  "subtitle": "Get Ready, Stay Steady!",
+  "emergencyTitle": "Emergency Contacts",
+  "fire": "Fire",
+  "ambulance": "Ambulance",
+  "police": "Police",
+  "checklistTitle": "✔ Safety Checklist",
+  "checklist": [
+    "✅ Always keep a small emergency kit 📦 (water, snack, torch, first-aid).",
+    "✅ Save important phone numbers 📞 (parents, teachers, police, ambulance).",
+    "✅ Know your safe place in school and home 🏫.",
+    "✅ Follow teacher’s instructions during drills or emergencies 👩‍🏫.",
+    "✅ Stay calm and help friends if they need support 🤝."
+  ],
+  "evacuationMap": "Evacuation Map 🗺",
+  "note": "🔔 Remember: Don’t panic, Stay calm, Think safe!"
+}

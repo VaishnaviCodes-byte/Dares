@@ -1,0 +1,137 @@
+/* Score.css */
+/* Container */
+.score-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+width:1000px;
+  height: 82vh;   
+  overflow-y: auto;     
+  /* overflow-x: hidden;    */
+}
+
+/* Only scroll vertically inside score page */
+.score-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+
+  /* Remove fixed height, allow content to decide */
+  min-height: calc(100vh - 100px); /* adjust if header/footer take space */
+
+  overflow-y: auto;   /* vertical scroll */
+  overflow-x: hidden; /* no side scroll */
+}
+
+/* Heading */
+.score-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+/* Section Cards */
+.section-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Heading */
+.section-card h2 {
+  margin-bottom: 15px;
+  color: #2980b9;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #2980b9;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Empty Message */
+.empty-msg {
+  text-align: center;
+  font-style: italic;
+  color: #7f8c8d;
+  margin: 15px 0;
+}
+
+/* Table Wrapper */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/* Modern Table */
+.modern-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.modern-table thead {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.modern-table th,
+.modern-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.modern-table tbody tr {
+  border-bottom: 1px solid #ddd;
+  transition: background 0.2s ease;
+}
+
+.modern-table tbody tr:hover {
+  background-color: #f1f9ff;
+}
+
+/* Buttons */
+.back-btn {
+    margin-right: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .modern-table th,
+  .modern-table td {
+    padding: 10px 8px;
+    font-size: 0.9rem;
+  }
+
+  .back-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

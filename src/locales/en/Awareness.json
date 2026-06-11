@@ -1,0 +1,20 @@
+{
+  "title": "Awareness: Know the Danger, Stay Safer!",
+  "earthquake": {
+    "title": "Earthquake 🌍💥",
+    "desc": "Drop, Cover, Hold On!"
+  },
+  "landslide": {
+    "title": "Landslide 🏔️🚗",
+    "desc": "Stay away from slopes!"
+  },
+  "flood": {
+    "title": "Flood 🌊🏠",
+    "desc": "Move to higher ground!"
+  },
+  "forestfire": {
+    "title": "Forest Fire 🔥🌲",
+    "desc": "Don’t play with fire!"
+  },
+  "awarenessBox": "Be Aware, Stay Safe!"
+}

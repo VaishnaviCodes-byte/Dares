@@ -1,0 +1,27 @@
+{
+  "flow": {
+    "step1": "Disaster Happens",
+    "step2": "Stay Calm",
+    "step3": "Protect Yourself"
+  },
+  "title": "Response:🚨 What to Do During a Disaster?",
+  "dosTitle": "Do’s",
+  "dosList": [
+    "😊 Stay calm and think before you act.",
+    "🧑‍🏫 Follow instructions from teachers, parents, or authorities.",
+    "👜 Keep your emergency kit ready.",
+    "🚶‍♂️📷 Move to safe areas (open ground, higher ground, or shelter).",
+    "🤝 Help classmates, younger children, elderly, or disabled persons.",
+    "☎️ Use emergency contacts if needed (112, 100, 101, 108).",
+    "📻 Stay updated with official alerts (radio, announcements)."
+  ],
+  "dontsTitle": "Don’ts",
+  "dontsList": [
+    "🏃‍♂️😱 Don’t panic, shout, or run blindly.",
+    "🛗❌ Don’t use elevators during earthquakes or fires.",
+    "📢❌ Don’t spread rumors or false information.",
+    "🚷📦 Don’t go back to collect belongings.",
+    "⚡🏚 Don’t go near damaged buildings, fallen wires, or flooded areas.",
+    "📢🚫 Don’t ignore safety drills and warnings."
+  ]
+}

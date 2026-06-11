@@ -1,0 +1,93 @@
+.Admin-Dashboard-dashboard {
+  width: 100vw;
+  min-height: 100vh;
+  background: #f5f6fa;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Admin-Dashboard-hero {
+  text-align: center;
+  padding: 60px 20px 40px;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.Admin-Dashboard-hero h1 { font-size: 36px; font-weight: 700; }
+.Admin-Dashboard-hero p { font-size: 18px; margin-top: 10px; font-weight: 400; }
+
+.Admin-Dashboard-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-top: -50px;
+}
+
+.Admin-Dashboard-metric-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.Admin-Dashboard-metric-card h3 { font-size: 16px; color: #57606f; margin-bottom: 10px; }
+.Admin-Dashboard-metric-value { font-size: 24px; font-weight: 700; color: #4facfe; margin-bottom: 12px; }
+
+.Admin-Dashboard-progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #dfe6e9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.Admin-Dashboard-progress {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.6s ease;
+}
+
+.Admin-Dashboard-progress.green { background: #43e97b; }
+.Admin-Dashboard-progress.orange { background: #f79d65; }
+.Admin-Dashboard-progress.yellow { background: #fbc531; }
+.Admin-Dashboard-progress.blue { background: #4facfe; }
+
+.Admin-Dashboard-charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.Admin-Dashboard-chart-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.Admin-Dashboard-chart-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+.Admin-Dashboard-chart-card h3 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #2d3436;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .Admin-Dashboard-metrics { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+  .Admin-Dashboard-charts { grid-template-columns: 1fr; }
+  .Admin-Dashboard-hero h1 { font-size: 28px; }
+  .Admin-Dashboard-hero p { font-size: 14px; }
+}

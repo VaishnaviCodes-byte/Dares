@@ -1,0 +1,65 @@
+{
+  "earthquakemcq": {
+    "questions": [
+      {
+        "question": "What should you do first when you feel an earthquake?",
+        "options": ["Run outside immediately", "Stay calm and Drop, Cover, Hold On", "Use the lift", "Call someone"],
+        "answer":1
+      },
+      {
+        "question": "Which of the following is NOT safe during an earthquake?",
+        "options": ["Standing under a doorway", "Taking shelter under a strong table", "Staying away from windows", "Crouching near an inner wall"],
+        "answer":0
+      },
+      {
+        "question": "What emergency number can you dial in India for disaster help?",
+        "options": ["108", "112", "100", "101"],
+        "answer":1
+      },
+      {
+        "question": "Why should you avoid using elevators during an earthquake?",
+        "options": ["They may get stuck", "They are too slow", "They are crowded", "They make noise"],
+        "answer":0
+      },
+      {
+        "question": "What should you keep in an earthquake emergency kit?",
+        "options": ["Food & water", "First aid box", "Torch & batteries", "All of the above"],
+        "answer":3
+      },
+      {
+        "question": "What is an aftershock?",
+        "options": ["A smaller earthquake before the main one", "Another earthquake after the main one", "A tremor caused by wind", "A volcanic eruption"],
+        "answer":1
+      },
+      {
+        "question": "Which of these is a long-term safety step?",
+        "options": ["Fixing heavy shelves to walls", "Running outside quickly", "Hiding under bed", "Waiting for help"],
+        "answer":0
+      },
+      {
+        "question": "Who should high school students inform first after they are safe?",
+        "options": ["Social media followers", "Teachers/parents/guardians", "Neighbours only", "Police only"],
+        "answer":1
+      },
+      {
+        "question": "What should schools practice to prepare students for earthquakes?",
+        "options": ["Fireworks", "Earthquake drills", "Sports events", "Cooking competitions"],
+        "answer":1
+      },
+      {
+        "question": "Where is the safest place indoors during an earthquake?",
+        "options": ["Near windows", "Under heavy furniture", "In doorways or under sturdy tables", "Next to tall shelves"],
+        "answer":2
+      }
+    ],
+    "buttons": {
+      "next": "Next →",
+      "finish": "Finish",
+      "playAgain": "🔄 Play Again!"
+    },
+    "messages": {
+      "hurray": "🎉 Hurray! You Did It!",
+      "score": "You scored {{score}} / {{total}}"
+    }
+  }
+}

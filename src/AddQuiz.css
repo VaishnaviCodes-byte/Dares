@@ -1,0 +1,169 @@
+
+
+/* ===== Quiz Page Container ===== */
+.aq-quiz-container {
+  text-align: center;
+  padding: 40px 20px;
+  width: 100vh;
+  height:100vh;
+  margin: 0 auto;
+  width:100vh;
+  height:100vh;
+}
+
+/* ===== Quiz Title ===== */
+.aq-quiz-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #003a8c;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Glass Card ===== */
+.aq-glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  padding: 25px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 450px;
+  margin: 20px auto;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* ===== Buttons ===== */
+.aq-quiz-btn {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.aq-quiz-btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  box-shadow: 0 6px 15px rgba(0, 114, 255, 0.4);
+}
+
+.aq-submit-btn {
+  width: 100%;
+  margin-top: 15px;
+}
+
+/* ===== Input Fields ===== */
+.aq-glass-card label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+  color: #003a8c;
+}
+
+.aq-glass-card select,
+.aq-glass-card input,
+.aq-glass-card textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.aq-glass-card input:focus,
+.aq-glass-card select:focus,
+.aq-glass-card textarea:focus {
+  border-color: #0072ff;
+  box-shadow: 0 0 6px rgba(0, 114, 255, 0.3);
+}
+
+/* ===== Options Section ===== */
+.aq-options-section input,
+.aq-options-section select,
+.aq-options-section textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.aq-options-section input:focus,
+.aq-options-section select:focus,
+.aq-options-section textarea:focus {
+  border-color: #0072ff;
+  box-shadow: 0 0 6px rgba(0, 114, 255, 0.3);
+}
+
+/* ===== Preview Section ===== */
+.aq-preview-section {
+  margin-top: 40px;
+  text-align: left;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.aq-preview-section h2 {
+  margin-bottom: 15px;
+  color: #003a8c;
+}
+
+.aq-preview-card {
+  background: #ffffffdd;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.aq-preview-card h3 {
+  margin: 0 0 10px 0;
+  color: #004aad;
+}
+
+/* ===== Question Preview ===== */
+.aq-question-preview {
+  margin-bottom: 12px;
+  padding: 8px;
+  border-left: 3px solid #0072ff;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Scrollbar Styling ===== */
+.aq-quiz-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.aq-quiz-container::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.aq-quiz-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  border-radius: 10px;
+}

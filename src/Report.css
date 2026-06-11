@@ -1,0 +1,125 @@
+/* Softer, pastel gradient background with animation */
+.report-app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: report-gradientFlow 12s ease infinite;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100vw;
+  height: 50vw;
+}
+
+/* Smooth gradient animation */
+@keyframes report-gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Elegant card */
+.report-form-card {
+  background: #ffffffcc;
+  backdrop-filter: blur(8px);
+  padding: 40px;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: report-fadeIn 1s ease-in-out;
+  align-self: center;
+}
+
+.report-form-card h1 {
+  margin-bottom: 10px;
+  font-size: 26px;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.report-subtitle {
+  margin-bottom: 25px;
+  font-size: 15px;
+  color: #555;
+}
+
+/* Inputs with subtle hover animation */
+.report-form input,
+.report-form select,
+.report-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background: #f9f9f9;
+  color: black;
+}
+
+.report-form input:hover,
+.report-form select:hover,
+.report-form textarea:hover {
+  background: #f1faff;
+}
+
+.report-form input:focus,
+.report-form select:focus,
+.report-form textarea:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 8px rgba(79, 172, 254, 0.4);
+  outline: none;
+}
+
+/* Button with smooth animation */
+.report-form button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  border: none;
+  border-radius: 14px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.report-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(79, 172, 254, 0.4);
+}
+
+/* Status messages */
+.report-status {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  animation: report-fadeIn 0.5s ease;
+}
+
+.report-success {
+  color: green;
+}
+
+.report-error {
+  color: red;
+}
+
+.report-info {
+  color: #333;
+}
+
+/* Fade-in animation */
+@keyframes report-fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

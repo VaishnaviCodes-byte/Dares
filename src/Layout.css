@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ---------- BASE ---------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(270deg, #87cefa, #cdecf7, #a3d5ff);
+  background-size: 600% 600%;
+  animation: gradientShift 15s ease infinite;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+  height: 60px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+  color: #010101;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  z-index: 1000;
+  position: sticky;
+  top: 0px;
+}
+
+/* Menu & Globe Icons */
+.menu2, .globe2 {
+  cursor: pointer;
+}
+
+.menu2 img {
+  width: 28px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.globe2 img{
+  width: 28px;
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+
+}
+/* Layout Icons */
+.layout-icons {
+  position: absolute;
+  left: 1390px;
+  top: 10px;
+  display: flex;
+  gap: 15px;
+}
+.layout-icons img{
+  height: 30px;
+}
+/* Logo */
+.logo-main {
+  position: absolute;
+  left: 50px;
+}
+
+.logo-main img {
+  width: 200px;
+  max-width: 100%;
+}
+
+/* ---------- PAGE CONTENT ---------- */
+.page-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  background: #3f668d;
+  text-align: center;
+  padding: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer a:hover {
+  color: #c0fdb7;
+}
+
+/* ---------- RESPONSIVENESS ---------- */
+
+/* Tablets (≤1024px) */
+@media (max-width: 1024px) {
+  .header {
+    font-size: 20px;
+    padding: 15px;
+    top: 30px;
+  }
+
+  .logo-main {
+    right: 200px;
+  }
+
+  .logo-main img {
+    width: 160px;
+  }
+
+  .layout-icons {
+    left: 200px;
+    gap: 12px;
+  }
+
+  .menu2 img, .globe2 img {
+    width: 26px;
+  }
+}
+
+/* Mobile Devices (≤768px) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 10px 15px;
+    top: 20px;
+  }
+
+  .logo-main {
+    position: static;
+  }
+
+  .logo-main img {
+    width: 140px;
+  }
+
+  .layout-icons {
+    position: static;
+    display: flex;
+    gap: 10px;
+  }
+
+  .menu2 img, .globe2 img {
+    width: 24px;
+  }
+
+  .page-content {
+    padding: 15px;
+  }
+
+  .footer {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+/* Small Phones (≤480px) */
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    top: 10px;
+  }
+
+  .logo-main img {
+    width: 120px;
+  }
+
+  .layout-icons {
+    gap: 8px;
+  }
+
+  .menu2 img, .globe2 img {
+    width: 22px;
+  }
+
+  .page-content {
+    padding: 10px;
+  }
+
+  .footer {
+    font-size: 13px;
+    padding: 10px;
+  }
+}

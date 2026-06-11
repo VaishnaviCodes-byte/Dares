@@ -1,0 +1,215 @@
+:root {
+  --bg: #f4f7fb;
+  --card-bg: linear-gradient(135deg,#89f7fe 0%, #66a6ff 100%);
+  --accent: #004aad;
+  --muted: #333;
+  --shadow: 0 6px 18px rgba(0,0,0,0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+.page-wrap {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: visible;
+}
+
+
+
+.card-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  max-width: 450px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-form h2 {
+  color: var(--accent);
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.card-form label {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 10px;
+  display: block;
+}
+
+.card-form input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+.card-btn {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 8px;
+  flex: 1;
+  height:50px;
+}
+
+.card-btn.ghost {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.btn-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.preview-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 420px;
+  flex-shrink: 0;
+  word-break: break-word;
+}
+
+.id-card {
+  margin-top:20px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  min-height: 260px;
+  border-radius: 14px;
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+  padding: 14px;
+  position: relative;
+  border: 3px solid var(--accent);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.id-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  background: rgba(0,0,0,0.2);
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.school-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 18px;
+  border: 2px solid var(--accent);
+}
+
+.school-name {
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+}
+
+.small {
+  font-size: 12px;
+  color: white;
+}
+
+.card-body {
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  gap: 10px;
+  margin-top: 8px;
+  flex: 1;
+}
+
+.photo {
+  width: 100px;
+  height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  background: white;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 4px 6px;
+  background: rgba(255,255,255,0.15);
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: white;
+}
+
+.details .k {
+  font-weight: bold;
+  text-align: right;
+  padding-right: 6px;
+}
+
+.details .v {
+  font-weight: 600;
+  text-align: left;
+}
+
+#cardPreview img.photo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Fix */
+@media (max-width: 900px) {
+  .page-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .preview-wrap, .card-form {
+    width: 100%;
+    max-width: 420px;
+  }
+}

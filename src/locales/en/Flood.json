@@ -1,0 +1,35 @@
+{
+  "flood": {
+    "instructionsTitle": "⚠ Instructions",
+    "before": "Before:",
+    "beforeList": [
+      "Keep safety kit ready",
+      "Store clean water and dry food",
+      "Know safe shelters nearby"
+    ],
+    "during": "During:",
+    "duringList": [
+      "Move to higher ground",
+      "Avoid flooded roads and bridges",
+      "Switch off electricity and gas"
+    ],
+    "after": "After:",
+    "afterList": [
+      "Stay away from flood water",
+      "Boil water before drinking",
+      "Call 112 for help"
+    ],
+    "videoTitle": "“Stay Prepared,Stay Afloat-Safety First in Floods”",
+    "safetyKit": "Safety Kit",
+    "kitItems": {
+      "firstAid": "First Aid Kit",
+      "mobile": "Mobile",
+      "fruits": "Food",
+      "bottle": "Bottle",
+      "clothes": "Raincoat",
+      "torch": "Torch",
+      "medicine": "Medicine"
+    },
+    "startDrill": "🚨 Start Virtual Drill"
+  }
+}
