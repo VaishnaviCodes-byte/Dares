@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./Login.css";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://dares-zdxx.onrender.com";
 
 export function LoginSignup() {
   const [isLogin, setIsLogin] = useState(true);
