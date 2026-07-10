@@ -7,12 +7,12 @@ import bcrypt from "bcryptjs";
 
 // ---------------- Config ----------------
 const PORT = 5000;
-const FRONTEND_URL = "http://localhost:3000"; // Frontend URL
+const FRONTEND_URL = process.env.FRONTEND_URL;; // Frontend URL
 const EMAIL_USER = "rakshitamirji77@gmail.com"; // Gmail
 const EMAIL_PASS = "axrohcrqpevlrant"; // Gmail app password
 
 // ---------------- MongoDB Connection ----------------
-mongoose.connect("mongodb://127.0.0.1:27017/daresDB")
+mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("✅ MongoDB connected"))
   .catch(err => console.log("❌ MongoDB error:", err));
 
@@ -49,7 +49,7 @@ const app = express();
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 app.use(cors({
-  origin: ["http://localhost:3000", "http://localhost:5173"], // your frontend URLs
+  origin: ["http://localhost:3000", "http://localhost:5173","https://dares-pi.vercel.app"], // your frontend URLs
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
@@ -102,7 +102,7 @@ app.post("/signup", async (req, res) => {
         subject: "Verify your email",
         html: `<p>Hello ${username},</p>
                <p>Click below to verify your email (valid 24 hours):</p>
-               <a href="http://localhost:5000/verify/${verificationToken}">Verify Email</a>`,
+               <a href="https://dares-zdxx.onrender.com/verify/${verificationToken}">Verify Email</a>`,
       };
 
       await transporter.sendMail(mailOptions);
@@ -463,10 +463,7 @@ app.post("/send-email", async (req, res) => {
   }
 });
 
-// Start server
-app.listen(PORT, () => {
-  console.log(`✅ Server running on http://localhost:${PORT}`);
-});
+// Start serve
 
 // -----------------------------✅ Route: Get combined dashboard data for all students
 app.get("/api/teacher-dashboard/:teacherName", async (req, res) => {
